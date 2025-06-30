@@ -4,16 +4,16 @@ This report summarizes the data and models used for Checkpoint 1 of the OpenAI-t
 
 ## Datasets
 
-*   **Sentinel-2 Scene:**
-    *   **ID:** TBD (To be determined in `notebooks/00_data_acquisition.ipynb`)
-    *   **Source:** Google Earth Engine (COPERNICUS/S2_SR)
-    *   **CRS:** TBD (To be determined from downloaded file)
-*   **LiDAR Tile:**
-    *   **ID:** TBD (To be determined from downloaded file)
-    *   **Source:** OpenTopography / ORNL DAAC
-    *   **CRS:** TBD (To be determined from downloaded file)
+*   **Digital Terrain Model (DTM):**
+    *   **Filename / ID:** `TAL01L0001C0001.grd`
+    *   **Collection:** TAL_A01_2018_DTM (ORNL DAAC Dataset 1644)
+    *   **CRS:** *None* (dataset supplied without explicit CRS header)
+*   **LiDAR Point-Cloud Tile:**
+    *   **Filename / ID:** `TAL01L0001C0001.las`
+    *   **Collection:** TAL_A01_2018_LAS (ORNL DAAC Dataset 1644)
+    *   **CRS:** *None* (LAS header contains no EPSG code)
 
 ## OpenAI Model
 
-*   **Model Name:** `gpt-4o-mini` (as a proxy for o3)
-*   **Exact Model ID:** TBD (will be logged from API response in `notebooks/01_checkpoint_1_analysis.ipynb`)
+*   **Model Name:** `gpt-4o-mini`
+*   **Exact Model ID Returned:** `gpt-4o-mini-2024-07-18`
