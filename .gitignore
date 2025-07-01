@@ -1,0 +1,138 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data (use DVC for tracking large files)
+/data/raw/
+/data/processed/
+/data/vector_db/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.sqlite
+*.db
+*.laz
+*.las
+*.tif
+*.tiff
+*.geojson
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.pdf
+*.zip
+!outputs/**/*.geojson
+!outputs/**/*.csv
+*.tar.gz
+*.7z
+
+# Exceptions - keep these files
+!data/README.md
+!data/raw/README.md
+!data/processed/README.md
+!data/vector_db/README.md
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.*.sw[po]
+.spyderproject
+.spyproject
+.ropeproject
+.project
+.pydevproject
+.settings/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# DVC
+.dvc/cache
+.dvc/tmp
+.dvc/plots
+/dvc.lock
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Cache directories
+.cache/
+__pycache__/
+.mypy_cache/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+node_modules/
+package-lock.json
+yarn.lock
+
+# Documentation build
+/site/
