@@ -1,0 +1,10 @@
+[run]
+omit =
+    src/data_ingestion/*
+    src/models/*
+    src/preprocessing/*
+    src/rag/*
+    src/visualization/*
+    test_integration.py
+    run_pipeline.py
+    setup.py

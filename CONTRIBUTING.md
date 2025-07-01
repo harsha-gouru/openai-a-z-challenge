@@ -44,3 +44,15 @@ If you'd like to contribute code, please follow these steps:
 
 *   All Python code should adhere to [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 *   We use [Black](https://github.com/psf/black) to format our code.
+
+### Development Setup
+
+1. Install dependencies:
+   ```bash
+   pip install -e .[dev]
+   ```
+2. Run tests with coverage:
+   ```bash
+   pytest --cov=src --cov=run_pipeline.py
+   ```
+3. Use `tqdm` for progress bars but guard imports with a fallback so pipelines run without optional deps.

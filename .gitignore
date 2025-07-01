@@ -63,6 +63,8 @@ venv.bak/
 *.cpg
 *.pdf
 *.zip
+!outputs/**/*.geojson
+!outputs/**/*.csv
 *.tar.gz
 *.7z
 
